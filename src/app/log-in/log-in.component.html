@@ -1,0 +1,43 @@
+
+<html>
+    <body>
+        
+  <div class="wrapper">
+    <div class="title">
+       Login Form
+    </div>
+    <form  >
+        <!-- [formGroup]="userLoginForm" (ngSubmit)="LoginSubmit()" formControlName="userEmail"-->
+       <div class="field">
+          <input type="text" required autocomplete="off">
+          <label>Email Address</label>
+          <!-- <span *ngIf="!userLoginForm.get('userEmail').valid && userLoginForm.get('userEmail').touched" style="color: red;">Please enter valid email!</span> -->
+       </div>
+       <div class="field">
+          <input type="password" required autocomplete="off">
+          <label>Password</label>
+       </div>
+       <div class="content">
+          <div class="checkbox">
+             <input type="checkbox" id="remember-me">
+             <label for="remember-me">Remember me</label>
+          </div>
+          <div class="pass-link">
+             <a href="">Forgot password?</a>
+          </div>
+       </div>
+       <div class="field">
+          <input type="submit"  value="Login">
+          <!-- [disabled]="!userLoginForm.valid" -->
+       </div>
+       <div class="signup-link">
+          Not a member? <a mat-button href="/register" routerLinkActive="active">Signup now</a>
+       </div>
+    </form>
+ </div>
+</body>
+</html>
+
+<!-- <app-admin-dashboard></app-admin-dashboard>
+
+<app-user-dashboard></app-user-dashboard> -->
